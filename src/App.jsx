@@ -43,7 +43,6 @@ const App = () => {
       <Form
         saveBook={(author, title) => {
           const newBook = { 'author': author, 'title': title };
-          // console.log(img);
           setBooks([...bookList, newBook]);
           books.push(newBook)
           saveLocalStorage();

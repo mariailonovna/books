@@ -16,9 +16,6 @@ const Table = ({ bookList, deleteBook, saveBook }) => {
   return (<table className="table mb-5 table-striped">
       <thead>
         <tr>
-          {/* <th>
-            Обложка книги
-          </th> */}
           <th>
             Автор книги
           </th>
@@ -32,7 +29,6 @@ const Table = ({ bookList, deleteBook, saveBook }) => {
       <tbody>
         {bookList.map((item, id) => (
           <tr key={id.toString()}>
-            {/* <td></td> */}
             <td> {
               edit === id ? <input className="form-control" type="text" value={newAuthor} onChange={e => {setNewAuthor(e.target.value)}} /> : <span>{item.author}</span>
             }
